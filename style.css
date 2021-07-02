@@ -1,0 +1,101 @@
+.header {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    grid-template-areas:
+        "header_logo header_nav header_but1"
+        ". header_txt .";
+    grid-template-rows: 1fr 10fr;
+    grid-column-gap: 20px;
+    min-height: 800px;
+    align-items: center;
+    background-image: url(images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+a:hover {
+    color: rgb(146, 30, 111);
+}
+
+body {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+
+
+}
+
+.header_logo {
+    grid-area: header_logo;
+    justify-self: center;
+}
+
+.header_nav {
+    grid-area: header_nav;
+    justify-self: right
+}
+
+
+.header_nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_but1 {
+    grid-area: header_but1;
+    justify-self: center height: 72px;
+    width: 72px;
+    height: 72px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #FAFAFA;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.header_txt {
+    grid-area: header_txt;
+    align-content: flex-start
+}
+
+#title1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 101%;
+}
+
+#p1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+#but_shop {
+    height: 25px;
+    width: 200px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #FF451C;
+    border-radius: 8px;
+}
+
+.txt_but {
+    color: #FAFAFA;
+}
+
+.main {
+    background-color: burlywood;
+    grid-column: 2/3;
+
+
+}
+
+.footer {
+    grid-column: 1/3;
+}
