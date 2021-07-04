@@ -75,7 +75,7 @@ body {
     line-height: 28px;
 }
 
-#but_shop {
+.but_shop {
     height: 25px;
     width: 200px;
     left: 0%;
@@ -87,13 +87,177 @@ body {
 
 .txt_but {
     color: #FAFAFA;
+
 }
 
 .main {
-    background-color: burlywood;
-    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: minmax(720px, auto) minmax(720px, auto);
+    grid-template-rows: minmax(800px, auto) minmax(380px, auto) minmax(700px, auto);
+    grid-template-areas: 'content1 content2'
+        'content4 content4'
+        'content5 content6'
+}
+
+.content1 {
+    grid-area: content1;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.content2 {
+    display: grid;
+    grid-area: content2;
+    background: #FAFAFA;
+    justify-content: left;
+    align-content: space-between;
+    align-items: left;
+    justify-items: left;
 
 
+}
+
+#but1 {
+    margin-left: 48px;
+}
+
+#title_cont2 {
+    padding-left: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 48px;
+}
+
+#txt_cont2 {
+    padding-left: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.content4 {
+    grid-area: content4;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+#name_cont4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+#txt_cont4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+.content5 {
+    grid-area: content5;
+
+}
+
+.content6 {
+    grid-area: content6;
+    display: grid;
+    background: #E8DCCD;
+    justify-content: left;
+    align-content: space-between;
+    align-items: left;
+    justify-items: left;
+}
+
+#title_cont6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 48px;
+    padding-left: 48px;
+}
+
+#bold_txt_cont6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 48px;
+}
+
+#txt1_cont6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 48px;
+}
+
+#bold_txt2_cont6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 28px;
+    padding-left: 48px;
+}
+
+#txt2_cont6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 48px;
+}
+
+#but3 {
+    margin-left: 48px;
+    margin-bottom: 20px;
+}
+
+.main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'content7 content8 content9 content10'
+}
+
+.content7 {
+    grid-area: content7;
+    justify-content: stretch;
+    align-content: stretch;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.content8 {
+    grid-area: content8;
+    justify-content: stretch;
+    align-content: stretch;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.content9 {
+    grid-area: content9;
+    justify-content: stretch;
+    align-content: stretch;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.content10 {
+    grid-area: content10;
+    justify-content: stretch;
+    align-content: stretch;
+    align-self: stretch;
+    justify-self: stretch;
 }
 
 .footer {
